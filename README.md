@@ -157,13 +157,6 @@ The repository can stay on the Windows drive while everything runs in WSL. `wsl.
 
 `setup_windows.ps1` creates a native Windows venv from `requirements-windows.txt` for the fast simulator and training. `.gitattributes` keeps LF line endings so the shell scripts run in WSL.
 
-## Limitations
-
-- Everything here has been tested in simulation and PX4 SITL only. It has not flown on real hardware; do not put it on a vehicle without your own testing and a safety pilot.
-- The barrier-function filter works on LiDAR sector data and is a heuristic. It carries no formal safety guarantee under sensing noise, model mismatch or moving obstacles.
-- In SITL the vehicle navigates on PX4's EKF position (simulated GPS) and a rangefinder for height.
-- The scripts in `experiments/milestone4` and `experiments/milestone5` are kept as they were run; several assume the repository is at `/home/kali/proj`.
-
 ## License
 
 BSD 3-Clause. See [LICENSE](LICENSE).
