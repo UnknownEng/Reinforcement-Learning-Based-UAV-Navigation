@@ -1,0 +1,28 @@
+# The source tree lives on the Windows drive but runs inside WSL (Linux),
+# so keep LF line endings in the working tree on both sides. Without this,
+# Windows git (core.autocrlf=true) rewrites shell scripts to CRLF and bash
+# in WSL fails with "$'\r': command not found".
+* text=auto eol=lf
+
+# Windows-only scripts keep CRLF.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Stable-Baselines3 monitor logs are written with CRLF by Python's csv module;
+# store them byte-for-byte.
+*.csv -text
+
+# Binary artefacts.
+*.zip binary
+*.pt binary
+*.pth binary
+*.npz binary
+*.pkl binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.bson binary
+*.ulg binary
+*.db3 binary
+events.out.tfevents.* binary

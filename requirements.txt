@@ -1,0 +1,18 @@
+# Python packages for the fast simulator, training, baselines and the PX4 SITL harness.
+# Tested with Python 3.12 on Ubuntu 24.04; the tested versions are noted on the right.
+# For the CPU-only PyTorch build, install it first:
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+# The Gazebo (gz.transport13, gz.msgs10) and ROS 2 (rclpy) Python bindings come from
+# their apt packages, not from pip.
+numpy>=1.26,<2            # 1.26.4
+scipy>=1.11               # 1.11.4
+gymnasium>=1.0            # 1.1.1
+stable-baselines3>=2.3    # 2.6.0
+torch>=2.2                # 2.6.0+cpu
+numba>=0.59               # 0.61.0
+matplotlib>=3.6           # 3.6.3
+psutil>=5.9               # 7.1.3
+pymavlink>=2.4.40         # 2.4.50 (PX4 SITL)
+opencv-python>=4.6        # 4.6.0 (camera recording and flight videos)
+tensorboard>=2.14         # optional training curves
+pytest>=7.4               # 7.4.4

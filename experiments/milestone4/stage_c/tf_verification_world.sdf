@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="tf_verification_world">
+    <physics name="1ms" type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <!-- Ground Plane at z=0 -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Synthetic Obstacle 1: Directly Forward (+X) at 2.0m from sensor (x=2.12, y=0.0, z=1.242, radius=0.15m) -->
+    <model name="obs_forward">
+      <static>true</static>
+      <pose>2.12 0.0 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Synthetic Obstacle 2: 60 deg Left (+Y) at 2.0m from sensor (x=1.12, y=1.732, z=1.242) -->
+    <model name="obs_left">
+      <static>true</static>
+      <pose>1.12 1.732 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0 1 0 1</ambient><diffuse>0 1 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Synthetic Obstacle 3: 60 deg Right (-Y) at 2.0m from sensor (x=1.12, y=-1.732, z=1.242) -->
+    <model name="obs_right">
+      <static>true</static>
+      <pose>1.12 -1.732 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Downward Test Platform: Box directly underneath at z=0.25, height 0.5m -> top at z=0.50m -->
+    <model name="downward_platform">
+      <static>true</static>
+      <pose>0.0 0.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry><box><size>0.6 0.6 0.5</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>0.6 0.6 0.5</size></box></geometry>
+          <material><ambient>0.5 0.5 0 1</ambient><diffuse>0.5 0.5 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Test Vehicle: Holybro x500_lidar positioned at origin at z=1.0m -->
+    <include>
+      <uri>model://x500_lidar</uri>
+      <name>x500_lidar_0</name>
+      <pose>0 0 1.0 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </world>
+</sdf>

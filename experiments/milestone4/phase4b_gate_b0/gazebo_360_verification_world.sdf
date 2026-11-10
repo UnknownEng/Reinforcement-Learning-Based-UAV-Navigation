@@ -1,0 +1,116 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="gazebo_360_verification_world">
+    <physics name="1ms" type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <!-- Ground Plane at z=0 -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Sector 0 (Front, 0 deg) at clearance 2.50m (center 2.87, 0.0, R=0.25m) -->
+    <model name="obs_sec0_front">
+      <static>true</static>
+      <pose>2.87 0.00 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 1 (Front-Left, 45 deg) at clearance 2.50m (center 2.06454, 1.94454, R=0.25m) -->
+    <model name="obs_sec1_front_left">
+      <static>true</static>
+      <pose>2.06454 1.94454 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0 1 0 1</ambient><diffuse>0 1 0 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 2 (Left, 90 deg) at clearance 2.50m (center 0.12, 2.75, R=0.25m) -->
+    <model name="obs_sec2_left">
+      <static>true</static>
+      <pose>0.12 2.75 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 3 (Back-Left, 135 deg) at clearance 2.50m (center -1.82454, 1.94454, R=0.25m) -->
+    <model name="obs_sec3_back_left">
+      <static>true</static>
+      <pose>-1.82454 1.94454 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 4 (Back, 180 deg) at clearance 2.50m (center -2.63, 0.0, R=0.25m) -->
+    <model name="obs_sec4_back">
+      <static>true</static>
+      <pose>-2.63 0.00 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>1 0 1 1</ambient><diffuse>1 0 1 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 5 (Back-Right, -135 deg) at clearance 2.50m (center -1.82454, -1.94454, R=0.25m) -->
+    <model name="obs_sec5_back_right">
+      <static>true</static>
+      <pose>-1.82454 -1.94454 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0 1 1 1</ambient><diffuse>0 1 1 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 6 (Right, -90 deg) at clearance 2.50m (center 0.12, -2.75, R=0.25m) -->
+    <model name="obs_sec6_right">
+      <static>true</static>
+      <pose>0.12 -2.75 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 7 (Front-Right, -45 deg) at clearance 2.50m (center 2.06454, -1.94454, R=0.25m) -->
+    <model name="obs_sec7_front_right">
+      <static>true</static>
+      <pose>2.06454 -1.94454 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Test Vehicle: Holybro x500_lidar positioned at origin at z=1.0m -->
+    <include>
+      <uri>model://x500_lidar</uri>
+      <name>x500_lidar_0</name>
+      <pose>0 0 1.0 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </world>
+</sdf>

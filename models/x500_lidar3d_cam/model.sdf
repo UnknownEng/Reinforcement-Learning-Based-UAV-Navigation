@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.9'>
+  <!-- x500_lidar3d (unchanged: same airframe, 7-channel mast LiDAR and rangefinder) plus two RECORDING-ONLY
+       cameras for videos/figures. The policy never sees the images. The camera links have no collision
+       geometry and negligible mass (1e-5 kg), so the vehicle dynamics are unchanged. -->
+  <model name='x500_lidar3d_cam'>
+    <include merge='true'>
+      <uri>x500_lidar3d</uri>
+    </include>
+
+    <!-- forward-looking onboard camera (FPV), slightly nose-down -->
+    <link name="fpv_cam_link">
+      <pose relative_to="base_link">0.14 0 0.06 0 0.12 0</pose>
+      <inertial>
+        <mass>0.00001</mass>
+        <inertia><ixx>1e-9</ixx><ixy>0</ixy><ixz>0</ixz><iyy>1e-9</iyy><iyz>0</iyz><izz>1e-9</izz></inertia>
+      </inertial>
+      <sensor name="fpv_camera" type="camera">
+        <topic>/uav/camera/fpv</topic>
+        <update_rate>10</update_rate>
+        <camera>
+          <horizontal_fov>1.75</horizontal_fov>
+          <image><width>640</width><height>360</height><format>R8G8B8</format></image>
+          <clip><near>0.05</near><far>80</far></clip>
+        </camera>
+        <always_on>1</always_on>
+        <visualize>false</visualize>
+      </sensor>
+    </link>
+    <joint name="fpv_cam_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>fpv_cam_link</child>
+    </joint>
+
+    <!-- third-person chase camera on a virtual boom 3 m behind and 1.3 m above, looking at the vehicle -->
+    <link name="chase_cam_link">
+      <pose relative_to="base_link">-3.0 0 1.3 0 0.36 0</pose>
+      <inertial>
+        <mass>0.00001</mass>
+        <inertia><ixx>1e-9</ixx><ixy>0</ixy><ixz>0</ixz><iyy>1e-9</iyy><iyz>0</iyz><izz>1e-9</izz></inertia>
+      </inertial>
+      <sensor name="chase_camera" type="camera">
+        <topic>/uav/camera/chase</topic>
+        <update_rate>10</update_rate>
+        <camera>
+          <horizontal_fov>1.30</horizontal_fov>
+          <image><width>640</width><height>360</height><format>R8G8B8</format></image>
+          <clip><near>0.10</near><far>80</far></clip>
+        </camera>
+        <always_on>1</always_on>
+        <visualize>false</visualize>
+      </sensor>
+    </link>
+    <joint name="chase_cam_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>chase_cam_link</child>
+    </joint>
+  </model>
+</sdf>

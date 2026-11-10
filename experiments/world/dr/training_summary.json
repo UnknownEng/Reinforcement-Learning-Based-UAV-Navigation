@@ -1,0 +1,247 @@
+{
+ "stage": "dr",
+ "steps": 602112,
+ "wall_s": 8130,
+ "init": "experiments/world/movers/model.zip",
+ "shield": true,
+ "n_envs": 4,
+ "git_head": "74ad241",
+ "reward_overrides": {},
+ "lagrangian": null,
+ "curriculum": {
+  "initial": {
+   "world_kinds": [
+    "forest"
+   ],
+   "forest_presets": [
+    "open",
+    "medium",
+    "dense"
+   ],
+   "n_movers_range": [
+    0,
+    4
+   ],
+   "domain_randomization": true
+  },
+  "schedule": []
+ },
+ "history": [
+  {
+   "steps": 25000,
+   "goal_reached": 89.5,
+   "obstacle_collision": 10.5,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 78
+  },
+  {
+   "steps": 50000,
+   "goal_reached": 85.5,
+   "obstacle_collision": 14.0,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 102
+  },
+  {
+   "steps": 75000,
+   "goal_reached": 88.5,
+   "obstacle_collision": 10.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 115
+  },
+  {
+   "steps": 100000,
+   "goal_reached": 83.5,
+   "obstacle_collision": 16.0,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 117
+  },
+  {
+   "steps": 125000,
+   "goal_reached": 87.0,
+   "obstacle_collision": 11.0,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 122
+  },
+  {
+   "steps": 150000,
+   "goal_reached": 85.0,
+   "obstacle_collision": 14.0,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 122
+  },
+  {
+   "steps": 175000,
+   "goal_reached": 83.5,
+   "obstacle_collision": 16.0,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 28
+  },
+  {
+   "steps": 200000,
+   "goal_reached": 81.5,
+   "obstacle_collision": 17.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 30
+  },
+  {
+   "steps": 225000,
+   "goal_reached": 85.0,
+   "obstacle_collision": 13.0,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 34
+  },
+  {
+   "steps": 250000,
+   "goal_reached": 88.0,
+   "obstacle_collision": 10.5,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 35
+  },
+  {
+   "steps": 275000,
+   "goal_reached": 87.5,
+   "obstacle_collision": 12.0,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 38
+  },
+  {
+   "steps": 300000,
+   "goal_reached": 80.5,
+   "obstacle_collision": 18.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 41
+  },
+  {
+   "steps": 325000,
+   "goal_reached": 82.5,
+   "obstacle_collision": 14.0,
+   "episode_timeout": 3.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 44
+  },
+  {
+   "steps": 350000,
+   "goal_reached": 86.5,
+   "obstacle_collision": 13.0,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 48
+  },
+  {
+   "steps": 375000,
+   "goal_reached": 85.5,
+   "obstacle_collision": 13.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 51
+  },
+  {
+   "steps": 400000,
+   "goal_reached": 87.5,
+   "obstacle_collision": 11.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 54
+  },
+  {
+   "steps": 425000,
+   "goal_reached": 86.5,
+   "obstacle_collision": 11.5,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 57
+  },
+  {
+   "steps": 450000,
+   "goal_reached": 82.5,
+   "obstacle_collision": 15.5,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 59
+  },
+  {
+   "steps": 475000,
+   "goal_reached": 84.0,
+   "obstacle_collision": 14.5,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 62
+  },
+  {
+   "steps": 500000,
+   "goal_reached": 88.5,
+   "obstacle_collision": 10.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 64
+  },
+  {
+   "steps": 525000,
+   "goal_reached": 83.5,
+   "obstacle_collision": 13.5,
+   "episode_timeout": 3.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 67
+  },
+  {
+   "steps": 550000,
+   "goal_reached": 82.5,
+   "obstacle_collision": 12.0,
+   "episode_timeout": 5.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 69
+  },
+  {
+   "steps": 575000,
+   "goal_reached": 85.0,
+   "obstacle_collision": 10.0,
+   "episode_timeout": 5.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 71
+  },
+  {
+   "steps": 600000,
+   "goal_reached": 76.5,
+   "obstacle_collision": 17.0,
+   "episode_timeout": 6.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 74
+  }
+ ]
+}

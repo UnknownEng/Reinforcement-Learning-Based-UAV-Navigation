@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="gazebo_360_multidistance_world">
+    <physics name="1ms" type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <!-- Ground Plane at z=0 -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!--
+      Vehicle is at (0, 0, 1.0).
+      LiDAR sensor link is at base_link relative (0.12, 0, 0.242).
+      World LiDAR position: (X_lidar, Y_lidar, Z_lidar) = (0.12, 0.0, 1.242).
+      All obstacles are vertical cylinders of radius R = 0.25m, height = 1.0m, centered at z = 1.242m.
+      Clearance = Distance_center - R = D_c - 0.25.
+      World center (X_w, Y_w) = (0.12 + D_c * cos(theta), D_c * sin(theta)).
+    -->
+
+    <!-- Sector 0: Front (0 deg). Target apex clearance: 1.50m -> D_c = 1.75m.
+         X_w = 0.12 + 1.75 = 1.87m, Y_w = 0.0m -->
+    <model name="obs_sec0_front">
+      <static>true</static>
+      <pose>1.87 0.00 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 1: Front-Left (45 deg). Target apex clearance: 3.50m -> D_c = 3.75m.
+         X_w = 0.12 + 3.75 * cos(45 deg) = 0.12 + 2.65165 = 2.77165m
+         Y_w = 3.75 * sin(45 deg) = 2.65165m -->
+    <model name="obs_sec1_front_left">
+      <static>true</static>
+      <pose>2.77165 2.65165 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0 1 0 1</ambient><diffuse>0 1 0 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 2: Left (90 deg). Target apex clearance: 2.00m -> D_c = 2.25m.
+         X_w = 0.12m, Y_w = 2.25m -->
+    <model name="obs_sec2_left">
+      <static>true</static>
+      <pose>0.12 2.25 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 3: Back-Left (135 deg). Target apex clearance: 4.20m -> D_c = 4.45m.
+         X_w = 0.12 - 4.45 * cos(45 deg) = 0.12 - 3.14663 = -3.02663m
+         Y_w = 4.45 * sin(45 deg) = 3.14663m -->
+    <model name="obs_sec3_back_left">
+      <static>true</static>
+      <pose>-3.02663 3.14663 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 4: Back (180 deg). Target apex clearance: 2.80m -> D_c = 3.05m.
+         X_w = 0.12 - 3.05 = -2.93m, Y_w = 0.0m -->
+    <model name="obs_sec4_back">
+      <static>true</static>
+      <pose>-2.93 0.00 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>1 0 1 1</ambient><diffuse>1 0 1 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 5: Back-Right (-135 deg). Target apex clearance: 4.80m -> D_c = 5.05m.
+         X_w = 0.12 - 5.05 * cos(45 deg) = 0.12 - 3.57089 = -3.45089m
+         Y_w = -5.05 * sin(45 deg) = -3.57089m -->
+    <model name="obs_sec5_back_right">
+      <static>true</static>
+      <pose>-3.45089 -3.57089 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0 1 1 1</ambient><diffuse>0 1 1 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 6: Right (-90 deg). Target apex clearance: 1.80m -> D_c = 2.05m.
+         X_w = 0.12m, Y_w = -2.05m -->
+    <model name="obs_sec6_right">
+      <static>true</static>
+      <pose>0.12 -2.05 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Sector 7: Front-Right (-45 deg). Target apex clearance: 3.00m -> D_c = 3.25m.
+         X_w = 0.12 + 3.25 * cos(45 deg) = 0.12 + 2.29810 = 2.41810m
+         Y_w = -3.25 * sin(45 deg) = -2.29810m -->
+    <model name="obs_sec7_front_right">
+      <static>true</static>
+      <pose>2.41810 -2.29810 1.242 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="vis"><geometry><cylinder><radius>0.25</radius><length>1.0</length></cylinder></geometry><material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- Test Vehicle: Holybro x500_lidar positioned at origin at z=1.0m -->
+    <include>
+      <uri>model://x500_lidar</uri>
+      <name>x500_lidar_0</name>
+      <pose>0 0 1.0 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </world>
+</sdf>

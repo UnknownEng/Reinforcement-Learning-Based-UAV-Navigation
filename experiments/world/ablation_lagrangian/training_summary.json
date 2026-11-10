@@ -1,0 +1,1952 @@
+{
+ "stage": "forest",
+ "steps": 1200128,
+ "wall_s": 9056,
+ "init": null,
+ "shield": false,
+ "n_envs": 4,
+ "git_head": "74ad241",
+ "reward_overrides": {},
+ "lagrangian": {
+  "cost_margin": 0.15,
+  "cost_limit": 0.5,
+  "lambda_lr": 0.1,
+  "history": [
+   {
+    "steps": 4096,
+    "episode_cost": 3.529,
+    "lambda": 0.303
+   },
+   {
+    "steps": 8192,
+    "episode_cost": 1.882,
+    "lambda": 0.441
+   },
+   {
+    "steps": 12288,
+    "episode_cost": 2.462,
+    "lambda": 0.637
+   },
+   {
+    "steps": 16384,
+    "episode_cost": 3.067,
+    "lambda": 0.894
+   },
+   {
+    "steps": 20480,
+    "episode_cost": 2.357,
+    "lambda": 1.08
+   },
+   {
+    "steps": 24576,
+    "episode_cost": 6.389,
+    "lambda": 1.669
+   },
+   {
+    "steps": 28672,
+    "episode_cost": 2.3,
+    "lambda": 1.849
+   },
+   {
+    "steps": 32768,
+    "episode_cost": 2.571,
+    "lambda": 2.056
+   },
+   {
+    "steps": 36864,
+    "episode_cost": 2.35,
+    "lambda": 2.241
+   },
+   {
+    "steps": 40960,
+    "episode_cost": 1.154,
+    "lambda": 2.306
+   },
+   {
+    "steps": 45056,
+    "episode_cost": 2.0,
+    "lambda": 2.456
+   },
+   {
+    "steps": 49152,
+    "episode_cost": 1.667,
+    "lambda": 2.573
+   },
+   {
+    "steps": 53248,
+    "episode_cost": 0.167,
+    "lambda": 2.539
+   },
+   {
+    "steps": 57344,
+    "episode_cost": 1.235,
+    "lambda": 2.613
+   },
+   {
+    "steps": 61440,
+    "episode_cost": 0.583,
+    "lambda": 2.621
+   },
+   {
+    "steps": 65536,
+    "episode_cost": 2.067,
+    "lambda": 2.778
+   },
+   {
+    "steps": 69632,
+    "episode_cost": 0.7,
+    "lambda": 2.798
+   },
+   {
+    "steps": 73728,
+    "episode_cost": 1.444,
+    "lambda": 2.892
+   },
+   {
+    "steps": 77824,
+    "episode_cost": 1.25,
+    "lambda": 2.967
+   },
+   {
+    "steps": 81920,
+    "episode_cost": 1.0,
+    "lambda": 3.017
+   },
+   {
+    "steps": 86016,
+    "episode_cost": 1.667,
+    "lambda": 3.134
+   },
+   {
+    "steps": 90112,
+    "episode_cost": 0.929,
+    "lambda": 3.177
+   },
+   {
+    "steps": 94208,
+    "episode_cost": 1.545,
+    "lambda": 3.282
+   },
+   {
+    "steps": 98304,
+    "episode_cost": 0.75,
+    "lambda": 3.307
+   },
+   {
+    "steps": 102400,
+    "episode_cost": 0.8,
+    "lambda": 3.337
+   },
+   {
+    "steps": 106496,
+    "episode_cost": 1.5,
+    "lambda": 3.437
+   },
+   {
+    "steps": 110592,
+    "episode_cost": 1.8,
+    "lambda": 3.567
+   },
+   {
+    "steps": 114688,
+    "episode_cost": 2.15,
+    "lambda": 3.732
+   },
+   {
+    "steps": 118784,
+    "episode_cost": 1.05,
+    "lambda": 3.787
+   },
+   {
+    "steps": 122880,
+    "episode_cost": 0.769,
+    "lambda": 3.813
+   },
+   {
+    "steps": 126976,
+    "episode_cost": 1.267,
+    "lambda": 3.89
+   },
+   {
+    "steps": 131072,
+    "episode_cost": 1.941,
+    "lambda": 4.034
+   },
+   {
+    "steps": 135168,
+    "episode_cost": 1.308,
+    "lambda": 4.115
+   },
+   {
+    "steps": 139264,
+    "episode_cost": 1.389,
+    "lambda": 4.204
+   },
+   {
+    "steps": 143360,
+    "episode_cost": 0.75,
+    "lambda": 4.229
+   },
+   {
+    "steps": 147456,
+    "episode_cost": 0.933,
+    "lambda": 4.272
+   },
+   {
+    "steps": 151552,
+    "episode_cost": 0.867,
+    "lambda": 4.309
+   },
+   {
+    "steps": 155648,
+    "episode_cost": 1.143,
+    "lambda": 4.373
+   },
+   {
+    "steps": 159744,
+    "episode_cost": 0.778,
+    "lambda": 4.401
+   },
+   {
+    "steps": 163840,
+    "episode_cost": 1.312,
+    "lambda": 4.482
+   },
+   {
+    "steps": 167936,
+    "episode_cost": 1.071,
+    "lambda": 4.539
+   },
+   {
+    "steps": 172032,
+    "episode_cost": 1.053,
+    "lambda": 4.595
+   },
+   {
+    "steps": 176128,
+    "episode_cost": 0.833,
+    "lambda": 4.628
+   },
+   {
+    "steps": 180224,
+    "episode_cost": 1.412,
+    "lambda": 4.719
+   },
+   {
+    "steps": 184320,
+    "episode_cost": 0.944,
+    "lambda": 4.764
+   },
+   {
+    "steps": 188416,
+    "episode_cost": 0.5,
+    "lambda": 4.764
+   },
+   {
+    "steps": 192512,
+    "episode_cost": 1.842,
+    "lambda": 4.898
+   },
+   {
+    "steps": 196608,
+    "episode_cost": 0.81,
+    "lambda": 4.929
+   },
+   {
+    "steps": 200704,
+    "episode_cost": 0.571,
+    "lambda": 4.936
+   },
+   {
+    "steps": 204800,
+    "episode_cost": 1.789,
+    "lambda": 5.065
+   },
+   {
+    "steps": 208896,
+    "episode_cost": 2.188,
+    "lambda": 5.234
+   },
+   {
+    "steps": 212992,
+    "episode_cost": 0.882,
+    "lambda": 5.272
+   },
+   {
+    "steps": 217088,
+    "episode_cost": 0.682,
+    "lambda": 5.29
+   },
+   {
+    "steps": 221184,
+    "episode_cost": 0.471,
+    "lambda": 5.287
+   },
+   {
+    "steps": 225280,
+    "episode_cost": 1.316,
+    "lambda": 5.369
+   },
+   {
+    "steps": 229376,
+    "episode_cost": 0.722,
+    "lambda": 5.391
+   },
+   {
+    "steps": 233472,
+    "episode_cost": 0.529,
+    "lambda": 5.394
+   },
+   {
+    "steps": 237568,
+    "episode_cost": 0.8,
+    "lambda": 5.424
+   },
+   {
+    "steps": 241664,
+    "episode_cost": 0.733,
+    "lambda": 5.447
+   },
+   {
+    "steps": 245760,
+    "episode_cost": 0.88,
+    "lambda": 5.485
+   },
+   {
+    "steps": 249856,
+    "episode_cost": 1.0,
+    "lambda": 5.535
+   },
+   {
+    "steps": 253952,
+    "episode_cost": 0.737,
+    "lambda": 5.559
+   },
+   {
+    "steps": 258048,
+    "episode_cost": 1.125,
+    "lambda": 5.621
+   },
+   {
+    "steps": 262144,
+    "episode_cost": 0.944,
+    "lambda": 5.666
+   },
+   {
+    "steps": 266240,
+    "episode_cost": 0.933,
+    "lambda": 5.709
+   },
+   {
+    "steps": 270336,
+    "episode_cost": 1.654,
+    "lambda": 5.824
+   },
+   {
+    "steps": 274432,
+    "episode_cost": 1.231,
+    "lambda": 5.898
+   },
+   {
+    "steps": 278528,
+    "episode_cost": 0.737,
+    "lambda": 5.921
+   },
+   {
+    "steps": 282624,
+    "episode_cost": 0.63,
+    "lambda": 5.934
+   },
+   {
+    "steps": 286720,
+    "episode_cost": 1.5,
+    "lambda": 6.034
+   },
+   {
+    "steps": 290816,
+    "episode_cost": 0.654,
+    "lambda": 6.05
+   },
+   {
+    "steps": 294912,
+    "episode_cost": 1.091,
+    "lambda": 6.109
+   },
+   {
+    "steps": 299008,
+    "episode_cost": 1.261,
+    "lambda": 6.185
+   },
+   {
+    "steps": 303104,
+    "episode_cost": 0.941,
+    "lambda": 6.229
+   },
+   {
+    "steps": 307200,
+    "episode_cost": 2.143,
+    "lambda": 6.393
+   },
+   {
+    "steps": 311296,
+    "episode_cost": 1.414,
+    "lambda": 6.485
+   },
+   {
+    "steps": 315392,
+    "episode_cost": 1.128,
+    "lambda": 6.547
+   },
+   {
+    "steps": 319488,
+    "episode_cost": 1.323,
+    "lambda": 6.63
+   },
+   {
+    "steps": 323584,
+    "episode_cost": 1.833,
+    "lambda": 6.763
+   },
+   {
+    "steps": 327680,
+    "episode_cost": 1.35,
+    "lambda": 6.848
+   },
+   {
+    "steps": 331776,
+    "episode_cost": 1.692,
+    "lambda": 6.967
+   },
+   {
+    "steps": 335872,
+    "episode_cost": 2.514,
+    "lambda": 7.169
+   },
+   {
+    "steps": 339968,
+    "episode_cost": 1.75,
+    "lambda": 7.294
+   },
+   {
+    "steps": 344064,
+    "episode_cost": 1.256,
+    "lambda": 7.369
+   },
+   {
+    "steps": 348160,
+    "episode_cost": 1.0,
+    "lambda": 7.419
+   },
+   {
+    "steps": 352256,
+    "episode_cost": 1.306,
+    "lambda": 7.5
+   },
+   {
+    "steps": 356352,
+    "episode_cost": 2.051,
+    "lambda": 7.655
+   },
+   {
+    "steps": 360448,
+    "episode_cost": 1.083,
+    "lambda": 7.713
+   },
+   {
+    "steps": 364544,
+    "episode_cost": 1.614,
+    "lambda": 7.824
+   },
+   {
+    "steps": 368640,
+    "episode_cost": 1.25,
+    "lambda": 7.899
+   },
+   {
+    "steps": 372736,
+    "episode_cost": 1.809,
+    "lambda": 8.03
+   },
+   {
+    "steps": 376832,
+    "episode_cost": 1.056,
+    "lambda": 8.086
+   },
+   {
+    "steps": 380928,
+    "episode_cost": 1.568,
+    "lambda": 8.193
+   },
+   {
+    "steps": 385024,
+    "episode_cost": 1.8,
+    "lambda": 8.323
+   },
+   {
+    "steps": 389120,
+    "episode_cost": 1.342,
+    "lambda": 8.407
+   },
+   {
+    "steps": 393216,
+    "episode_cost": 1.738,
+    "lambda": 8.531
+   },
+   {
+    "steps": 397312,
+    "episode_cost": 1.556,
+    "lambda": 8.636
+   },
+   {
+    "steps": 401408,
+    "episode_cost": 1.512,
+    "lambda": 8.737
+   },
+   {
+    "steps": 405504,
+    "episode_cost": 1.571,
+    "lambda": 8.845
+   },
+   {
+    "steps": 409600,
+    "episode_cost": 1.133,
+    "lambda": 8.908
+   },
+   {
+    "steps": 413696,
+    "episode_cost": 1.333,
+    "lambda": 8.991
+   },
+   {
+    "steps": 417792,
+    "episode_cost": 1.55,
+    "lambda": 9.096
+   },
+   {
+    "steps": 421888,
+    "episode_cost": 1.488,
+    "lambda": 9.195
+   },
+   {
+    "steps": 425984,
+    "episode_cost": 1.354,
+    "lambda": 9.28
+   },
+   {
+    "steps": 430080,
+    "episode_cost": 1.356,
+    "lambda": 9.366
+   },
+   {
+    "steps": 434176,
+    "episode_cost": 1.4,
+    "lambda": 9.456
+   },
+   {
+    "steps": 438272,
+    "episode_cost": 1.0,
+    "lambda": 9.506
+   },
+   {
+    "steps": 442368,
+    "episode_cost": 1.526,
+    "lambda": 9.609
+   },
+   {
+    "steps": 446464,
+    "episode_cost": 1.13,
+    "lambda": 9.672
+   },
+   {
+    "steps": 450560,
+    "episode_cost": 1.412,
+    "lambda": 9.763
+   },
+   {
+    "steps": 454656,
+    "episode_cost": 1.939,
+    "lambda": 9.907
+   },
+   {
+    "steps": 458752,
+    "episode_cost": 1.553,
+    "lambda": 10.012
+   },
+   {
+    "steps": 462848,
+    "episode_cost": 0.839,
+    "lambda": 10.046
+   },
+   {
+    "steps": 466944,
+    "episode_cost": 1.673,
+    "lambda": 10.163
+   },
+   {
+    "steps": 471040,
+    "episode_cost": 1.189,
+    "lambda": 10.232
+   },
+   {
+    "steps": 475136,
+    "episode_cost": 1.558,
+    "lambda": 10.338
+   },
+   {
+    "steps": 479232,
+    "episode_cost": 1.377,
+    "lambda": 10.426
+   },
+   {
+    "steps": 483328,
+    "episode_cost": 0.739,
+    "lambda": 10.45
+   },
+   {
+    "steps": 487424,
+    "episode_cost": 1.815,
+    "lambda": 10.581
+   },
+   {
+    "steps": 491520,
+    "episode_cost": 2.194,
+    "lambda": 10.75
+   },
+   {
+    "steps": 495616,
+    "episode_cost": 1.463,
+    "lambda": 10.847
+   },
+   {
+    "steps": 499712,
+    "episode_cost": 1.583,
+    "lambda": 10.955
+   },
+   {
+    "steps": 503808,
+    "episode_cost": 1.083,
+    "lambda": 11.013
+   },
+   {
+    "steps": 507904,
+    "episode_cost": 1.457,
+    "lambda": 11.109
+   },
+   {
+    "steps": 512000,
+    "episode_cost": 1.295,
+    "lambda": 11.189
+   },
+   {
+    "steps": 516096,
+    "episode_cost": 1.596,
+    "lambda": 11.298
+   },
+   {
+    "steps": 520192,
+    "episode_cost": 1.393,
+    "lambda": 11.388
+   },
+   {
+    "steps": 524288,
+    "episode_cost": 1.326,
+    "lambda": 11.47
+   },
+   {
+    "steps": 528384,
+    "episode_cost": 1.304,
+    "lambda": 11.55
+   },
+   {
+    "steps": 532480,
+    "episode_cost": 1.128,
+    "lambda": 11.613
+   },
+   {
+    "steps": 536576,
+    "episode_cost": 1.5,
+    "lambda": 11.713
+   },
+   {
+    "steps": 540672,
+    "episode_cost": 1.68,
+    "lambda": 11.831
+   },
+   {
+    "steps": 544768,
+    "episode_cost": 1.314,
+    "lambda": 11.913
+   },
+   {
+    "steps": 548864,
+    "episode_cost": 2.104,
+    "lambda": 12.073
+   },
+   {
+    "steps": 552960,
+    "episode_cost": 1.571,
+    "lambda": 12.18
+   },
+   {
+    "steps": 557056,
+    "episode_cost": 1.122,
+    "lambda": 12.242
+   },
+   {
+    "steps": 561152,
+    "episode_cost": 1.1,
+    "lambda": 12.302
+   },
+   {
+    "steps": 565248,
+    "episode_cost": 1.5,
+    "lambda": 12.402
+   },
+   {
+    "steps": 569344,
+    "episode_cost": 1.483,
+    "lambda": 12.501
+   },
+   {
+    "steps": 573440,
+    "episode_cost": 0.789,
+    "lambda": 12.53
+   },
+   {
+    "steps": 577536,
+    "episode_cost": 1.296,
+    "lambda": 12.609
+   },
+   {
+    "steps": 581632,
+    "episode_cost": 1.275,
+    "lambda": 12.687
+   },
+   {
+    "steps": 585728,
+    "episode_cost": 0.59,
+    "lambda": 12.696
+   },
+   {
+    "steps": 589824,
+    "episode_cost": 1.191,
+    "lambda": 12.765
+   },
+   {
+    "steps": 593920,
+    "episode_cost": 1.16,
+    "lambda": 12.831
+   },
+   {
+    "steps": 598016,
+    "episode_cost": 1.267,
+    "lambda": 12.908
+   },
+   {
+    "steps": 602112,
+    "episode_cost": 1.694,
+    "lambda": 13.027
+   },
+   {
+    "steps": 606208,
+    "episode_cost": 1.612,
+    "lambda": 13.138
+   },
+   {
+    "steps": 610304,
+    "episode_cost": 1.019,
+    "lambda": 13.19
+   },
+   {
+    "steps": 614400,
+    "episode_cost": 1.281,
+    "lambda": 13.268
+   },
+   {
+    "steps": 618496,
+    "episode_cost": 1.263,
+    "lambda": 13.344
+   },
+   {
+    "steps": 622592,
+    "episode_cost": 1.137,
+    "lambda": 13.408
+   },
+   {
+    "steps": 626688,
+    "episode_cost": 1.091,
+    "lambda": 13.467
+   },
+   {
+    "steps": 630784,
+    "episode_cost": 1.28,
+    "lambda": 13.545
+   },
+   {
+    "steps": 634880,
+    "episode_cost": 1.733,
+    "lambda": 13.669
+   },
+   {
+    "steps": 638976,
+    "episode_cost": 1.5,
+    "lambda": 13.769
+   },
+   {
+    "steps": 643072,
+    "episode_cost": 1.175,
+    "lambda": 13.836
+   },
+   {
+    "steps": 647168,
+    "episode_cost": 1.182,
+    "lambda": 13.904
+   },
+   {
+    "steps": 651264,
+    "episode_cost": 0.92,
+    "lambda": 13.946
+   },
+   {
+    "steps": 655360,
+    "episode_cost": 1.273,
+    "lambda": 14.023
+   },
+   {
+    "steps": 659456,
+    "episode_cost": 0.957,
+    "lambda": 14.069
+   },
+   {
+    "steps": 663552,
+    "episode_cost": 1.904,
+    "lambda": 14.209
+   },
+   {
+    "steps": 667648,
+    "episode_cost": 1.618,
+    "lambda": 14.321
+   },
+   {
+    "steps": 671744,
+    "episode_cost": 2.018,
+    "lambda": 14.473
+   },
+   {
+    "steps": 675840,
+    "episode_cost": 1.404,
+    "lambda": 14.563
+   },
+   {
+    "steps": 679936,
+    "episode_cost": 1.816,
+    "lambda": 14.695
+   },
+   {
+    "steps": 684032,
+    "episode_cost": 1.515,
+    "lambda": 14.796
+   },
+   {
+    "steps": 688128,
+    "episode_cost": 1.327,
+    "lambda": 14.879
+   },
+   {
+    "steps": 692224,
+    "episode_cost": 1.297,
+    "lambda": 14.959
+   },
+   {
+    "steps": 696320,
+    "episode_cost": 1.382,
+    "lambda": 15.047
+   },
+   {
+    "steps": 700416,
+    "episode_cost": 1.298,
+    "lambda": 15.127
+   },
+   {
+    "steps": 704512,
+    "episode_cost": 1.369,
+    "lambda": 15.214
+   },
+   {
+    "steps": 708608,
+    "episode_cost": 1.397,
+    "lambda": 15.304
+   },
+   {
+    "steps": 712704,
+    "episode_cost": 1.677,
+    "lambda": 15.421
+   },
+   {
+    "steps": 716800,
+    "episode_cost": 1.588,
+    "lambda": 15.53
+   },
+   {
+    "steps": 720896,
+    "episode_cost": 1.134,
+    "lambda": 15.593
+   },
+   {
+    "steps": 724992,
+    "episode_cost": 1.649,
+    "lambda": 15.708
+   },
+   {
+    "steps": 729088,
+    "episode_cost": 2.0,
+    "lambda": 15.858
+   },
+   {
+    "steps": 733184,
+    "episode_cost": 1.123,
+    "lambda": 15.921
+   },
+   {
+    "steps": 737280,
+    "episode_cost": 1.804,
+    "lambda": 16.051
+   },
+   {
+    "steps": 741376,
+    "episode_cost": 1.734,
+    "lambda": 16.175
+   },
+   {
+    "steps": 745472,
+    "episode_cost": 1.708,
+    "lambda": 16.295
+   },
+   {
+    "steps": 749568,
+    "episode_cost": 1.328,
+    "lambda": 16.378
+   },
+   {
+    "steps": 753664,
+    "episode_cost": 1.365,
+    "lambda": 16.465
+   },
+   {
+    "steps": 757760,
+    "episode_cost": 1.593,
+    "lambda": 16.574
+   },
+   {
+    "steps": 761856,
+    "episode_cost": 1.52,
+    "lambda": 16.676
+   },
+   {
+    "steps": 765952,
+    "episode_cost": 1.593,
+    "lambda": 16.785
+   },
+   {
+    "steps": 770048,
+    "episode_cost": 1.436,
+    "lambda": 16.879
+   },
+   {
+    "steps": 774144,
+    "episode_cost": 1.806,
+    "lambda": 17.009
+   },
+   {
+    "steps": 778240,
+    "episode_cost": 1.671,
+    "lambda": 17.127
+   },
+   {
+    "steps": 782336,
+    "episode_cost": 1.667,
+    "lambda": 17.243
+   },
+   {
+    "steps": 786432,
+    "episode_cost": 1.462,
+    "lambda": 17.339
+   },
+   {
+    "steps": 790528,
+    "episode_cost": 1.634,
+    "lambda": 17.453
+   },
+   {
+    "steps": 794624,
+    "episode_cost": 1.733,
+    "lambda": 17.576
+   },
+   {
+    "steps": 798720,
+    "episode_cost": 1.268,
+    "lambda": 17.653
+   },
+   {
+    "steps": 802816,
+    "episode_cost": 1.456,
+    "lambda": 17.749
+   },
+   {
+    "steps": 806912,
+    "episode_cost": 1.647,
+    "lambda": 17.863
+   },
+   {
+    "steps": 811008,
+    "episode_cost": 1.23,
+    "lambda": 17.936
+   },
+   {
+    "steps": 815104,
+    "episode_cost": 1.21,
+    "lambda": 18.007
+   },
+   {
+    "steps": 819200,
+    "episode_cost": 1.403,
+    "lambda": 18.097
+   },
+   {
+    "steps": 823296,
+    "episode_cost": 1.288,
+    "lambda": 18.176
+   },
+   {
+    "steps": 827392,
+    "episode_cost": 1.184,
+    "lambda": 18.245
+   },
+   {
+    "steps": 831488,
+    "episode_cost": 1.525,
+    "lambda": 18.347
+   },
+   {
+    "steps": 835584,
+    "episode_cost": 1.367,
+    "lambda": 18.434
+   },
+   {
+    "steps": 839680,
+    "episode_cost": 1.273,
+    "lambda": 18.511
+   },
+   {
+    "steps": 843776,
+    "episode_cost": 1.593,
+    "lambda": 18.62
+   },
+   {
+    "steps": 847872,
+    "episode_cost": 1.312,
+    "lambda": 18.702
+   },
+   {
+    "steps": 851968,
+    "episode_cost": 1.5,
+    "lambda": 18.802
+   },
+   {
+    "steps": 856064,
+    "episode_cost": 1.418,
+    "lambda": 18.893
+   },
+   {
+    "steps": 860160,
+    "episode_cost": 1.194,
+    "lambda": 18.963
+   },
+   {
+    "steps": 864256,
+    "episode_cost": 1.604,
+    "lambda": 19.073
+   },
+   {
+    "steps": 868352,
+    "episode_cost": 1.302,
+    "lambda": 19.153
+   },
+   {
+    "steps": 872448,
+    "episode_cost": 1.6,
+    "lambda": 19.263
+   },
+   {
+    "steps": 876544,
+    "episode_cost": 1.585,
+    "lambda": 19.372
+   },
+   {
+    "steps": 880640,
+    "episode_cost": 1.823,
+    "lambda": 19.504
+   },
+   {
+    "steps": 884736,
+    "episode_cost": 1.612,
+    "lambda": 19.615
+   },
+   {
+    "steps": 888832,
+    "episode_cost": 1.763,
+    "lambda": 19.741
+   },
+   {
+    "steps": 892928,
+    "episode_cost": 1.766,
+    "lambda": 19.868
+   },
+   {
+    "steps": 897024,
+    "episode_cost": 1.339,
+    "lambda": 19.952
+   },
+   {
+    "steps": 901120,
+    "episode_cost": 1.552,
+    "lambda": 20.0
+   },
+   {
+    "steps": 905216,
+    "episode_cost": 1.407,
+    "lambda": 20.0
+   },
+   {
+    "steps": 909312,
+    "episode_cost": 1.554,
+    "lambda": 20.0
+   },
+   {
+    "steps": 913408,
+    "episode_cost": 1.431,
+    "lambda": 20.0
+   },
+   {
+    "steps": 917504,
+    "episode_cost": 1.558,
+    "lambda": 20.0
+   },
+   {
+    "steps": 921600,
+    "episode_cost": 1.229,
+    "lambda": 20.0
+   },
+   {
+    "steps": 925696,
+    "episode_cost": 1.795,
+    "lambda": 20.0
+   },
+   {
+    "steps": 929792,
+    "episode_cost": 1.417,
+    "lambda": 20.0
+   },
+   {
+    "steps": 933888,
+    "episode_cost": 1.576,
+    "lambda": 20.0
+   },
+   {
+    "steps": 937984,
+    "episode_cost": 1.818,
+    "lambda": 20.0
+   },
+   {
+    "steps": 942080,
+    "episode_cost": 1.214,
+    "lambda": 20.0
+   },
+   {
+    "steps": 946176,
+    "episode_cost": 1.103,
+    "lambda": 20.0
+   },
+   {
+    "steps": 950272,
+    "episode_cost": 1.5,
+    "lambda": 20.0
+   },
+   {
+    "steps": 954368,
+    "episode_cost": 1.49,
+    "lambda": 20.0
+   },
+   {
+    "steps": 958464,
+    "episode_cost": 1.4,
+    "lambda": 20.0
+   },
+   {
+    "steps": 962560,
+    "episode_cost": 2.06,
+    "lambda": 20.0
+   },
+   {
+    "steps": 966656,
+    "episode_cost": 1.396,
+    "lambda": 20.0
+   },
+   {
+    "steps": 970752,
+    "episode_cost": 2.193,
+    "lambda": 20.0
+   },
+   {
+    "steps": 974848,
+    "episode_cost": 1.471,
+    "lambda": 20.0
+   },
+   {
+    "steps": 978944,
+    "episode_cost": 1.49,
+    "lambda": 20.0
+   },
+   {
+    "steps": 983040,
+    "episode_cost": 1.047,
+    "lambda": 20.0
+   },
+   {
+    "steps": 987136,
+    "episode_cost": 1.0,
+    "lambda": 20.0
+   },
+   {
+    "steps": 991232,
+    "episode_cost": 1.604,
+    "lambda": 20.0
+   },
+   {
+    "steps": 995328,
+    "episode_cost": 1.611,
+    "lambda": 20.0
+   },
+   {
+    "steps": 999424,
+    "episode_cost": 1.446,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1003520,
+    "episode_cost": 2.0,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1007616,
+    "episode_cost": 1.828,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1011712,
+    "episode_cost": 1.065,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1015808,
+    "episode_cost": 1.604,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1019904,
+    "episode_cost": 1.268,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1024000,
+    "episode_cost": 1.333,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1028096,
+    "episode_cost": 1.789,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1032192,
+    "episode_cost": 1.311,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1036288,
+    "episode_cost": 1.264,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1040384,
+    "episode_cost": 1.614,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1044480,
+    "episode_cost": 1.654,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1048576,
+    "episode_cost": 1.25,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1052672,
+    "episode_cost": 1.769,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1056768,
+    "episode_cost": 0.891,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1060864,
+    "episode_cost": 1.414,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1064960,
+    "episode_cost": 1.339,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1069056,
+    "episode_cost": 1.561,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1073152,
+    "episode_cost": 1.426,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1077248,
+    "episode_cost": 1.889,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1081344,
+    "episode_cost": 1.362,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1085440,
+    "episode_cost": 1.354,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1089536,
+    "episode_cost": 1.125,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1093632,
+    "episode_cost": 1.08,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1097728,
+    "episode_cost": 1.48,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1101824,
+    "episode_cost": 1.59,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1105920,
+    "episode_cost": 1.408,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1110016,
+    "episode_cost": 1.849,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1114112,
+    "episode_cost": 0.979,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1118208,
+    "episode_cost": 1.66,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1122304,
+    "episode_cost": 1.852,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1126400,
+    "episode_cost": 1.536,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1130496,
+    "episode_cost": 1.333,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1134592,
+    "episode_cost": 1.456,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1138688,
+    "episode_cost": 1.776,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1142784,
+    "episode_cost": 1.453,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1146880,
+    "episode_cost": 1.516,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1150976,
+    "episode_cost": 1.906,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1155072,
+    "episode_cost": 1.196,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1159168,
+    "episode_cost": 1.143,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1163264,
+    "episode_cost": 1.469,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1167360,
+    "episode_cost": 1.212,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1171456,
+    "episode_cost": 1.845,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1175552,
+    "episode_cost": 0.9,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1179648,
+    "episode_cost": 1.714,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1183744,
+    "episode_cost": 1.2,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1187840,
+    "episode_cost": 1.803,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1191936,
+    "episode_cost": 1.645,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1196032,
+    "episode_cost": 1.5,
+    "lambda": 20.0
+   },
+   {
+    "steps": 1200128,
+    "episode_cost": 1.682,
+    "lambda": 20.0
+   }
+  ]
+ },
+ "curriculum": {
+  "initial": {
+   "world_kinds": [
+    "forest"
+   ],
+   "forest_presets": [
+    "open"
+   ],
+   "n_movers_range": [
+    0,
+    0
+   ],
+   "domain_randomization": false
+  },
+  "schedule": [
+   [
+    0.25,
+    {
+     "forest_presets": [
+      "open",
+      "medium"
+     ]
+    }
+   ],
+   [
+    0.55,
+    {
+     "forest_presets": [
+      "open",
+      "medium",
+      "dense"
+     ]
+    }
+   ]
+  ]
+ },
+ "history": [
+  {
+   "steps": 25000,
+   "goal_reached": 3.2,
+   "obstacle_collision": 47.4,
+   "episode_timeout": 27.4,
+   "out_of_bounds": 4.2,
+   "ground_crash": 17.9,
+   "steps_per_s": 247
+  },
+  {
+   "steps": 50000,
+   "goal_reached": 5.6,
+   "obstacle_collision": 41.7,
+   "episode_timeout": 36.7,
+   "out_of_bounds": 3.9,
+   "ground_crash": 12.2,
+   "steps_per_s": 236
+  },
+  {
+   "steps": 75000,
+   "goal_reached": 9.5,
+   "obstacle_collision": 36.0,
+   "episode_timeout": 45.5,
+   "out_of_bounds": 4.0,
+   "ground_crash": 5.0,
+   "steps_per_s": 198
+  },
+  {
+   "steps": 100000,
+   "goal_reached": 12.5,
+   "obstacle_collision": 23.0,
+   "episode_timeout": 53.0,
+   "out_of_bounds": 7.5,
+   "ground_crash": 4.0,
+   "steps_per_s": 197
+  },
+  {
+   "steps": 125000,
+   "goal_reached": 21.0,
+   "obstacle_collision": 29.0,
+   "episode_timeout": 42.0,
+   "out_of_bounds": 5.5,
+   "ground_crash": 2.5,
+   "steps_per_s": 190
+  },
+  {
+   "steps": 150000,
+   "goal_reached": 24.0,
+   "obstacle_collision": 32.5,
+   "episode_timeout": 38.0,
+   "out_of_bounds": 3.5,
+   "ground_crash": 2.0,
+   "steps_per_s": 185
+  },
+  {
+   "steps": 175000,
+   "goal_reached": 30.5,
+   "obstacle_collision": 28.5,
+   "episode_timeout": 37.0,
+   "out_of_bounds": 3.0,
+   "ground_crash": 1.0,
+   "steps_per_s": 79
+  },
+  {
+   "steps": 200000,
+   "goal_reached": 39.0,
+   "obstacle_collision": 27.0,
+   "episode_timeout": 30.0,
+   "out_of_bounds": 3.5,
+   "ground_crash": 0.5,
+   "steps_per_s": 71
+  },
+  {
+   "steps": 225000,
+   "goal_reached": 43.0,
+   "obstacle_collision": 27.0,
+   "episode_timeout": 27.0,
+   "out_of_bounds": 3.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 45
+  },
+  {
+   "steps": 250000,
+   "goal_reached": 56.0,
+   "obstacle_collision": 24.5,
+   "episode_timeout": 18.5,
+   "out_of_bounds": 1.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 37
+  },
+  {
+   "steps": 275000,
+   "goal_reached": 57.5,
+   "obstacle_collision": 30.5,
+   "episode_timeout": 11.0,
+   "out_of_bounds": 1.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 40
+  },
+  {
+   "steps": 300000,
+   "goal_reached": 67.0,
+   "obstacle_collision": 25.5,
+   "episode_timeout": 7.0,
+   "out_of_bounds": 0.5,
+   "ground_crash": 0.0,
+   "steps_per_s": 43
+  },
+  {
+   "steps": 325000,
+   "goal_reached": 59.0,
+   "obstacle_collision": 37.0,
+   "episode_timeout": 4.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 46
+  },
+  {
+   "steps": 350000,
+   "goal_reached": 61.0,
+   "obstacle_collision": 37.0,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 49
+  },
+  {
+   "steps": 375000,
+   "goal_reached": 55.5,
+   "obstacle_collision": 43.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 52
+  },
+  {
+   "steps": 400000,
+   "goal_reached": 57.5,
+   "obstacle_collision": 41.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 54
+  },
+  {
+   "steps": 425000,
+   "goal_reached": 62.5,
+   "obstacle_collision": 36.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 57
+  },
+  {
+   "steps": 450000,
+   "goal_reached": 61.5,
+   "obstacle_collision": 37.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 60
+  },
+  {
+   "steps": 475000,
+   "goal_reached": 57.0,
+   "obstacle_collision": 40.5,
+   "episode_timeout": 2.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 63
+  },
+  {
+   "steps": 500000,
+   "goal_reached": 68.0,
+   "obstacle_collision": 29.5,
+   "episode_timeout": 2.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 65
+  },
+  {
+   "steps": 525000,
+   "goal_reached": 52.5,
+   "obstacle_collision": 46.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 68
+  },
+  {
+   "steps": 550000,
+   "goal_reached": 58.5,
+   "obstacle_collision": 40.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 71
+  },
+  {
+   "steps": 575000,
+   "goal_reached": 66.0,
+   "obstacle_collision": 34.0,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 74
+  },
+  {
+   "steps": 600000,
+   "goal_reached": 65.5,
+   "obstacle_collision": 34.5,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 76
+  },
+  {
+   "steps": 625000,
+   "goal_reached": 56.5,
+   "obstacle_collision": 43.5,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 79
+  },
+  {
+   "steps": 650000,
+   "goal_reached": 57.5,
+   "obstacle_collision": 42.5,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 82
+  },
+  {
+   "steps": 675000,
+   "goal_reached": 50.0,
+   "obstacle_collision": 48.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.5,
+   "ground_crash": 0.0,
+   "steps_per_s": 84
+  },
+  {
+   "steps": 700000,
+   "goal_reached": 53.5,
+   "obstacle_collision": 45.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 87
+  },
+  {
+   "steps": 725000,
+   "goal_reached": 57.0,
+   "obstacle_collision": 42.5,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.5,
+   "ground_crash": 0.0,
+   "steps_per_s": 89
+  },
+  {
+   "steps": 750000,
+   "goal_reached": 50.0,
+   "obstacle_collision": 50.0,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 92
+  },
+  {
+   "steps": 775000,
+   "goal_reached": 48.0,
+   "obstacle_collision": 50.5,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 94
+  },
+  {
+   "steps": 800000,
+   "goal_reached": 47.5,
+   "obstacle_collision": 52.5,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 97
+  },
+  {
+   "steps": 825000,
+   "goal_reached": 51.5,
+   "obstacle_collision": 47.5,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.5,
+   "steps_per_s": 99
+  },
+  {
+   "steps": 850000,
+   "goal_reached": 55.5,
+   "obstacle_collision": 44.0,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 102
+  },
+  {
+   "steps": 875000,
+   "goal_reached": 46.0,
+   "obstacle_collision": 54.0,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 104
+  },
+  {
+   "steps": 900000,
+   "goal_reached": 50.5,
+   "obstacle_collision": 48.5,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 106
+  },
+  {
+   "steps": 925000,
+   "goal_reached": 49.5,
+   "obstacle_collision": 48.5,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 109
+  },
+  {
+   "steps": 950000,
+   "goal_reached": 53.0,
+   "obstacle_collision": 45.5,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 111
+  },
+  {
+   "steps": 975000,
+   "goal_reached": 44.0,
+   "obstacle_collision": 55.0,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 113
+  },
+  {
+   "steps": 1000000,
+   "goal_reached": 54.0,
+   "obstacle_collision": 45.0,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 115
+  },
+  {
+   "steps": 1025000,
+   "goal_reached": 54.0,
+   "obstacle_collision": 44.0,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 118
+  },
+  {
+   "steps": 1050000,
+   "goal_reached": 51.5,
+   "obstacle_collision": 48.0,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 120
+  },
+  {
+   "steps": 1075000,
+   "goal_reached": 50.0,
+   "obstacle_collision": 50.0,
+   "episode_timeout": 0.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 122
+  },
+  {
+   "steps": 1100000,
+   "goal_reached": 59.0,
+   "obstacle_collision": 39.0,
+   "episode_timeout": 2.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 124
+  },
+  {
+   "steps": 1125000,
+   "goal_reached": 54.5,
+   "obstacle_collision": 44.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 126
+  },
+  {
+   "steps": 1150000,
+   "goal_reached": 47.5,
+   "obstacle_collision": 51.0,
+   "episode_timeout": 1.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 128
+  },
+  {
+   "steps": 1175000,
+   "goal_reached": 52.0,
+   "obstacle_collision": 47.0,
+   "episode_timeout": 1.0,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 130
+  },
+  {
+   "steps": 1200000,
+   "goal_reached": 50.0,
+   "obstacle_collision": 49.5,
+   "episode_timeout": 0.5,
+   "out_of_bounds": 0.0,
+   "ground_crash": 0.0,
+   "steps_per_s": 133
+  }
+ ]
+}

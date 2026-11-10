@@ -1,0 +1,132 @@
+{
+ "stage": "movers",
+ "steps": 400000,
+ "planned_steps": 600000,
+ "note": "stopped at the 400k checkpoint (checkpoints/movers_400000_steps.zip, copied to model.zip) because the host fell to ~25-60 steps/s (Windows power mode 'Best power efficiency' on AC)",
+ "init": "experiments/world/forest/model.zip",
+ "shield": true,
+ "n_envs": 4,
+ "curriculum": {
+  "initial": {
+   "forest_presets": [
+    "open",
+    "medium",
+    "dense"
+   ],
+   "n_movers_range": [
+    1,
+    3
+   ]
+  },
+  "schedule": [
+   [
+    0.4,
+    {
+     "n_movers_range": [
+      1,
+      6
+     ]
+    }
+   ]
+  ],
+  "switch_at_steps": 240000
+ },
+ "history": [
+  {
+   "steps": 25000,
+   "goal_reached": 88.5,
+   "obstacle_collision": 10.5,
+   "episode_timeout": 1.0
+  },
+  {
+   "steps": 50000,
+   "goal_reached": 86.0,
+   "obstacle_collision": 11.5,
+   "episode_timeout": 2.5
+  },
+  {
+   "steps": 75000,
+   "goal_reached": 85.0,
+   "obstacle_collision": 13.0,
+   "episode_timeout": 2.0
+  },
+  {
+   "steps": 100000,
+   "goal_reached": 85.5,
+   "obstacle_collision": 13.0,
+   "episode_timeout": 1.5
+  },
+  {
+   "steps": 125000,
+   "goal_reached": 87.5,
+   "obstacle_collision": 11.0,
+   "episode_timeout": 1.5
+  },
+  {
+   "steps": 150000,
+   "goal_reached": 88.5,
+   "obstacle_collision": 11.0,
+   "episode_timeout": 0.5
+  },
+  {
+   "steps": 175000,
+   "goal_reached": 87.0,
+   "obstacle_collision": 12.5,
+   "episode_timeout": 0.5
+  },
+  {
+   "steps": 200000,
+   "goal_reached": 84.5,
+   "obstacle_collision": 12.5,
+   "episode_timeout": 3.0
+  },
+  {
+   "steps": 225000,
+   "goal_reached": 85.0,
+   "obstacle_collision": 13.5,
+   "episode_timeout": 1.5
+  },
+  {
+   "steps": 250000,
+   "goal_reached": 89.5,
+   "obstacle_collision": 9.5,
+   "episode_timeout": 1.0
+  },
+  {
+   "steps": 275000,
+   "goal_reached": 88.0,
+   "obstacle_collision": 11.0,
+   "episode_timeout": 1.0
+  },
+  {
+   "steps": 300000,
+   "goal_reached": 81.5,
+   "obstacle_collision": 16.0,
+   "episode_timeout": 2.5
+  },
+  {
+   "steps": 325000,
+   "goal_reached": 85.0,
+   "obstacle_collision": 13.5,
+   "episode_timeout": 1.5
+  },
+  {
+   "steps": 350000,
+   "goal_reached": 89.0,
+   "obstacle_collision": 9.5,
+   "episode_timeout": 1.5
+  },
+  {
+   "steps": 375000,
+   "goal_reached": 85.0,
+   "obstacle_collision": 14.0,
+   "episode_timeout": 1.0
+  },
+  {
+   "steps": 400000,
+   "goal_reached": 83.5,
+   "obstacle_collision": 15.0,
+   "episode_timeout": 1.5
+  }
+ ]
+}

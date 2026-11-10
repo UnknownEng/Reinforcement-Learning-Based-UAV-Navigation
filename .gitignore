@@ -1,0 +1,29 @@
+# Python environments and build output
+venv
+.venv/
+*.egg-info/
+build/
+install/
+log/
+.pytest_cache/
+__pycache__/
+*.pyc
+PX4-Autopilot
+
+# Output of .\wsl.ps1 run -Log / sitl
+/logs/
+
+# Worlds generated from a seed for each SITL trial / mission / parity check
+# (uav_sitl/run_trials.py, run_missions.py, check_lidar_parity.py); regenerated on demand
+/worlds/*_trial_*.sdf
+/worlds/*_trial_*.json
+/worlds/mission_*.sdf
+/worlds/mission_*.json
+/worlds/parity_*.sdf
+/worlds/parity_*.json
+
+# LaTeX build logs and the Overleaf upload bundle (both regenerated from paper/ sources)
+/paper/*.log
+/paper/*.blg
+/paper/*.aux
+/paper/ieee_paper_overleaf.zip
