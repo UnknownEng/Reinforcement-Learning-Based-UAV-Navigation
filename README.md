@@ -6,6 +6,10 @@ A quadrotor flies through cluttered forest with a 3-D LiDAR, steered by a PPO po
 
 *A PX4 SITL flight through a forest with moving hazards. Top: chase and onboard cameras, recorded for the video only. Bottom: obstacles, LiDAR returns and path seen from above, the 7 × 90 LiDAR range image, and the commands before and after the safety layer.*
 
+## Demo
+
+https://github.com/user-attachments/assets/8bb84c98-2494-4a8d-90f8-8bed340e8541
+
 ## Contents
 
 - **Procedural worlds.** Forests at four stem densities (350 to 1800 stems/ha) built from trunks, saplings, low branches, foliage, bushes, fallen logs and crowns; urban street canyons; warehouse aisles; pole fields. Up to six moving hazards (walkers and flyers) can be added. SITL trials export the same generated worlds to Gazebo.
