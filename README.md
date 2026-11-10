@@ -40,8 +40,8 @@ Tested on Ubuntu 24.04 (also under WSL2 on Windows 11) with Python 3.12.
 Training and evaluation in the fast simulator need only Python:
 
 ```bash
-git clone https://github.com/UnknownEng/safe-rl-uav-forest-navigation.git
-cd safe-rl-uav-forest-navigation
+git clone https://github.com/UnknownEng/Reinforcement-Learning-Based-UAV-Navigation.git
+cd Reinforcement-Learning-Based-UAV-Navigation
 python3 -m venv --system-site-packages ~/venvs/uav-sitl
 source ~/venvs/uav-sitl/bin/activate
 pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
